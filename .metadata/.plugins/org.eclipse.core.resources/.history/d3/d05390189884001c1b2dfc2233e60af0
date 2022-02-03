@@ -1,0 +1,29 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<%-- JSP주석은 이렇게 작성합니다.
+JSP 주석은 소스보기에 나타나지 않습니다. --%>
+<!--  html주석은 소스보기에 나타납니다. -->
+
+	<%!
+		double celcius = -5.0;
+	
+		double CtoF(double c){
+		
+			return c * 1.8 + 32;
+		}
+	%>
+	
+	<h1>오늘 현재 동교동 온도</h1>
+	
+	섭씨 온도 : <%= celcius %> <br/>
+	화씨 온도 : <%= CtoF(celcius) %> <br/>
+
+</body>
+</html>
